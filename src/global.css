@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pokemon-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+.btn-pokemon {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.btn {
+  cursor: pointer;
+  background-color: indigo;
+  height: 30px;
+  width: 100px;
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.pokemon-id {
+  font-size: 3rem;
+}
