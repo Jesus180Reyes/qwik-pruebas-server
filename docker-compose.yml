@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  db:
+    container_name: mysql-db
+    image: mysql:oracle
+    volumes:
+      - pruebas-db:/var/lib/mysql
+    
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    restart:  always
+
+    
+volumes:
+    pruebas-db:
+      external: false
+        
+    
+    
+  
+      
