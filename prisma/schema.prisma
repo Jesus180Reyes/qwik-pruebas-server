@@ -15,3 +15,12 @@ model User {
   email String  @unique
   name  String?
 }
+
+
+model Pokemon {
+  id  Int @id @unique
+  name String
+  front_default_img String 
+  back_default_img String 
+
+}

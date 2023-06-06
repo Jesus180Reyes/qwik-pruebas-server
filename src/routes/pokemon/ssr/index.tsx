@@ -24,7 +24,7 @@ export default component$(() => {
   const location = useLocation();
   const navigate = useNavigate();
   const index = Number(location.url.searchParams.get("pokemon_index"));
-  const pokemonIndex = useSignal<number>(index);
+  const pokemonIndex = useSignal<number>(index || 1);
 
   return (
     <>
