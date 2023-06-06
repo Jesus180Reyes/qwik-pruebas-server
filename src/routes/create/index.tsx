@@ -1,14 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import type { RequestHandler } from "@builder.io/qwik-city";
 import { routeAction$, zod$, z, Form } from "@builder.io/qwik-city";
 import { PrismaClient } from "@prisma/client";
 
-export const onPost: RequestHandler = async (requestEvent) => {
-  const prisma = new PrismaClient();
-  const data = await requestEvent.request.json();
-  const user = await prisma.user.create(data);
-  requestEvent.json(201, { ok: true, user });
-};
 export const useCreateUser = routeAction$(
   async (data) => {
     const prisma = new PrismaClient();
