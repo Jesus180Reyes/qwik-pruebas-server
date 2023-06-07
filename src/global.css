@@ -31,3 +31,24 @@ h3 {
 .pokemon-id {
   font-size: 3rem;
 }
+
+.pokemons-cont {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-card {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

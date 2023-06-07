@@ -14,19 +14,22 @@ export default component$(() => {
 
   return (
     <>
-      {pokemons.value?.pokemons.map((pokemon) => {
-        return (
-          <div key={pokemon.id}>
-            <h2>{pokemon.name}</h2>
-            <img
-              src={pokemon.front_default_img}
-              alt={pokemon.id.toString()}
-              width={100}
-              height={100}
-            />
-          </div>
-        );
-      })}
+      <div class="pokemons-cont">
+        {pokemons.value?.pokemons.map((pokemon) => {
+          return (
+            <div key={pokemon.id} class="pokemon-card">
+              <h2>{pokemon.name}</h2>
+              <img
+                src={pokemon.front_default_img}
+                alt={pokemon.id.toString()}
+                width={100}
+                height={100}
+              />
+            </div>
+          );
+        })}
+      </div>
+      ;
     </>
   );
 });
